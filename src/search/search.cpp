@@ -15,8 +15,7 @@
 #include "sort.hpp"
 
 
-#define ONE_PLY 4
-#define MAX_MOVES 2048
+constexpr int ONE_PLY = 4;
 
 clock_t getClock() {
 	struct timespec tp;
