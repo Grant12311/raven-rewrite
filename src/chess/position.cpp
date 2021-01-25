@@ -20,7 +20,7 @@ int getfile(int square) {
 	return square % 8;
 }
 
-int strsquaretoidx(std::string square) {
+int strsquaretoidx(const std::string& square) {
 	int file = (int)square[0] - 97;
 	int rank = (int)square[1] - 49;
 	return fileranktosquareidx(file, rank);
@@ -167,7 +167,7 @@ void dspBoard(Position *pos) {
 	std::cout << "\n";
 }
 
-void parsefen(Position *pos, std::string ofen) {
+void parsefen(Position *pos, const std::string& ofen) {
 	if (ofen == "startpos") {
 		parsefen(pos, "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 		return;

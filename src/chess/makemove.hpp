@@ -5,7 +5,7 @@
 #include "position.hpp"
 
 void makeMove(const Move *move, Position *pos);
-void makeMovestr(std::string move, Position *pos);
+void makeMovestr(const std::string& move, Position *pos);
 void unmakeMove(const Move *move, Position *pos);
-void unmakeMovestr(std::string move, Position *pos, int lastcap);
+void unmakeMovestr(const std::string& move, Position *pos, int lastcap);
 #endif

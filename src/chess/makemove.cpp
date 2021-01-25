@@ -252,7 +252,7 @@ void unmakeMove(const Move *move, Position *pos) {
 	// movestackidx--;
 	// capstackidx--;
 }
-void makeMovestr(std::string move, Position *pos) {
+void makeMovestr(const std::string& move, Position *pos) {
 
 	//	char startsquare[3];
 	//	char endsquare[3];
@@ -342,7 +342,7 @@ void makeMovestr(std::string move, Position *pos) {
 	Move moveobj = {.from = startsquareidx, .to = endsquareidx, .prom = prom, .piece = piece, .cappiece = cappiece, .type = movetype};
 	makeMove(&moveobj, pos);
 }
-void unmakeMovestr(std::string move, Position *pos, int lastcap) {
+void unmakeMovestr(const std::string& move, Position *pos, int lastcap) {
 
 	//	char startsquare[3];
 	//	char endsquare[3];
