@@ -104,11 +104,9 @@ void dspBoard(Position *pos) {
 	std::cout << "  +---+---+---+---+---+---+---+---+\n";
 	std::cout << "8 |";
 
-	int rank = 0;
-	int file = 0;
 	int sq = 0;
-	for (rank = 7; rank >= 0; rank--) {
-		for (file = 0; file <= 7; file++) {
+	for (int rank = 7; rank >= 0; rank--) {
+		for (int file = 0; file <= 7; file++) {
 			sq = fileranktosquareidx(file, rank);
 			char piece = getPiece(pos, sq);
 			if (piece == NONE)
