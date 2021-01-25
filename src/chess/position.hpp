@@ -4,11 +4,11 @@
 
 typedef unsigned long long U64;
 
-#define WHITE 1
-#define BLACK 0
-#define MATE_SCORE 9999
-#define NO_SCORE 10000
-#define MAX_PLY 8192
+constexpr int WHITE = 1;
+constexpr int BLACK = 0;
+constexpr int MATE_SCORE = 9999;
+constexpr int NO_SCORE = 10000;
+constexpr int MAX_PLY = 8192;
 
 void initLookups();
 
