@@ -3,9 +3,9 @@
 #include <cassert>
 #include <stdlib.h>
 
-U64 pieceHash[13][64];
-U64 turnHash;
-U64 castleHash[4];
+static U64 pieceHash[13][64];
+static U64 turnHash;
+static U64 castleHash[4];
 
 #define RAND_64 ((uint64_t)(rand() & 0x7FFF) ^ ((uint64_t)(rand() & 0x7FFF) << 15) ^ ((uint64_t)(rand() & 0x7FFF) << 30) ^ ((uint64_t)(rand() & 0x7FFF) << 45) ^ ((uint64_t)(rand() & 0xF) << 60))
 
