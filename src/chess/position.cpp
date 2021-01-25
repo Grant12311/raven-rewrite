@@ -206,7 +206,7 @@ void parsefen(Position *pos, const std::string& ofen) {
 	}
 
 	int j = 0;
-	for (int i = 0; i < (int)tokens[0].length(); i++) {
+	for (int i = 0; i < tokens[0].length(); i++) {
 		char letter = tokens[0][i];
 
 		// get rank and file of A1 = 0 board from A8 = 0 board
