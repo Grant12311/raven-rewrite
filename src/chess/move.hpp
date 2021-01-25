@@ -7,8 +7,7 @@
 
 enum MOVETYPE { NORMAL, DOUBLE, CAPTURE, EN_PASSANT, PROMO, PROMO_CAPTURE, KSC, QSC };
 
-class Move {
-  public:
+struct Move {
 	int from;
 	int to;
 	int prom;
