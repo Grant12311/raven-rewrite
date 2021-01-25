@@ -23,7 +23,7 @@ void initZobrist() {
 	}
 }
 
-int pieceintval(int inpiece, int colour) {
+static constexpr int pieceintval(int inpiece, int colour) {
 	if (colour == BLACK) {
 		switch (inpiece) {
 		case PAWN:
